@@ -16,15 +16,8 @@ corr_matrix <- cor(numeric_data)
 print(corr_matrix)
 
 # Plot the correlation matrix
-corrplot(
-  corr_matrix,
-  method = "color",             # Use colored visualization
-  addCoef.col = "black",        # Add correlation coefficient in black color
-  tl.col = "black",             # Text label color
-  number.cex = 0.8,             # Size of correlation numbers
-  title = "Correlation Matrix of Iris Data", # Title
-  mar = c(0, 0, 1, 0)           # Margins
-)
+corrplot(corr_matrix, method = "color", title = "Correlation Matrix of Iris Data")
+
 
 # Perform One-Way ANOVA for Sepal.Length based on Species
 anova_result <- aov(Sepal.Length ~ Species, data = iris)
