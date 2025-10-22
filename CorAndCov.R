@@ -16,7 +16,7 @@ corr_matrix <- cor(numeric_data)
 print(corr_matrix)
 
 # Plot the correlation matrix
-corrplot(corr_matrix, method = "color", title = "Correlation Matrix of Iris Data")
+corrplot(corr_matrix, method = "number")
 
 
 # Perform One-Way ANOVA for Sepal.Length based on Species
